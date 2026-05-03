@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proposal ❤️</title>
+
+<style>
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+  font-size: 28px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#yes {
+  background: #28a745;
+  color: white;
+}
+
+#no {
+  background: #ff4d4d;
+  color: white;
+  position: absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Will you be mine? 💖</h2>
+
+<button id="yes" onclick="yesClick()">Yes 💕</button>
+<button id="no" onmouseover="moveBtn()">No 💔</button>
+
+<script>
+function yesClick() {
+  document.body.innerHTML = "<h1 style='color:white; margin-top:150px;'>Yay! ❤️</h1>";
+}
+
+function moveBtn() {
+  var b = document.getElementById("no");
+  b.style.top = Math.random()*300 + "px";
+  b.style.left = Math.random()*300 + "px";
+}
+</script>
+
+</body>
+</html>
